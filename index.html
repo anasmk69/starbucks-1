@@ -14,6 +14,22 @@
             left: -12%;
             background: #036635;
             border-radius: 100%;
+            animation-name: top;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none;
+        }
+        @keyframes top{
+            from{
+                  transform: translateX(-200px) translateY(-100px);
+                  
+            }
+            to{
+                transform: translateX(0px) translateY(0px);
+            }
         }
         .large_circle{
             width:800px;
@@ -23,6 +39,31 @@
             right: -25%;
             background: #036635;
             border-radius: 100%;
+            animation-name: bottom;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none;
+        }
+        @keyframes bottom{
+            from{
+                  transform: translateX(1000px) translateY(500px);
+                  
+            }
+            to{
+                transform: translateX(0px) translateY(0px);
+            }
+        }
+        @keyframes bott2{
+            from{
+                  transform: translateY(400px);
+                  
+            }
+            to{
+                transform: translateX(0px) translateY(0px);
+            }
         }
         .container{
            width:85%;
@@ -113,7 +154,14 @@
             position: absolute; width: 3%; top:55%;right: 3%;
         }
         .mainpic{
-            position: absolute; width: 25%; top:20%;right: 20%; 
+            position: absolute; width: 25%; top:20%;right: 20%;
+            animation-name: bott2;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none; 
         }
         @media screen and (max-width:576px){
                 .small_circle{
@@ -168,7 +216,7 @@
                 .mainpic{
                     width:35%;
                     right: 0%;
-                    top: 30%;
+                    top: 35%;
                     z-index: -10;
                 }
                 button{
