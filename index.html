@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star bucks</title>
+    <link rel="icon" href="baa867c146c04d0b329fd6b0bf70281e-removebg-preview.png">
+    <style>
+        .small_circle{
+            width:400px;
+            height: 400px;
+            position: absolute;
+            top:-23%;
+            left: -12%;
+            background: #036635;
+            border-radius: 100%;
+        }
+        .large_circle{
+            width:800px;
+            height: 800px;
+            position: absolute;
+            bottom:-50%;
+            right: -25%;
+            background: #036635;
+            border-radius: 100%;
+        }
+        .container{
+           width:85%;
+           height: 85%;
+           background: #fff;
+           position: absolute;
+           border-radius: 5px;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%); 
+           box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+           overflow: hidden;
+        }
+        .full{
+           width:100%;
+           height: 100%;
+           position: absolute;
+           top:0%;
+           left: 0%;
+           overflow: hidden;
+        }
+        .navb{
+           width:90%;
+           height: 20%;
+           position: relative;
+           top:5%;
+           left:5%;
+           background: #fff;
+        }
+        nav{
+            position: absolute;
+            text-align: right;
+            width: 100%;
+            height: 0%;
+            z-index: 3;
+            top: 35%;
+        }
+        .logo{
+            width: 10%;
+            height:90%;
+        }
+        nav a{
+            margin-right: 30px;
+            text-decoration: none;
+            color: #5d5d5d;
+            transition: 0.3s ease-in-out;
+        }
+        nav a:hover{
+            border-bottom: 1px solid #036635;
+        }
+        button{
+            margin-left: 6%;
+            margin-top: 20px;
+            width:15%;
+            height:10%;
+            color:#fff;
+            font-size: 13px;
+            font-weight: 400;
+            background: #036635;
+            border: 1px solid #036635;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+        }
+        button:hover{
+            background: #fff;
+            color: #036635;
+        }
+        .main{
+            color: #414040;
+            margin-left:6% ;
+            padding-top: 20px;
+            font-size:40px;
+            font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        .mainp{
+            color: #414040;
+            margin-left: 6%;
+            padding-top: 0px;
+            width: 40%;
+        }
+        .f{
+            position: absolute; width: 3%; top:30%;right: 3%;
+        }
+        .t{
+            position: absolute; width: 3%; top:42%;right: 3%;
+        }
+        .i{
+            position: absolute; width: 3%; top:55%;right: 3%;
+        }
+        .mainpic{
+            position: absolute; width: 25%; top:20%;right: 20%; 
+        }
+        @media screen and (max-width:576px){
+                .small_circle{
+                    width:200px;
+                    height: 200px;
+                    position: absolute;
+                    top:-10%;
+                    left: -18%;
+                }
+                .large_circle{
+                    width:400px;
+                    height: 400px;
+                    position: absolute;
+                    bottom:-25%;
+                    right: -40%;
+                }
+                .logo{
+                    width: 30%;
+                    height:95%;
+                }
+                nav a{
+                    margin-right: 3px;
+                    margin-left: 3px;
+                    text-decoration: none;
+                    color: #414040;
+                    transition: 0.3s ease-in-out;
+                    font-size: 9.5px;
+                    font-weight: 700;
+                    padding: 0px;
+                }
+                .navb{
+                    top: 2%;
+                    height: 15%;
+                }
+                nav{
+                    top: 35%;
+                }
+                .main{
+                    font-size: 25px;
+                    padding-left: 2.5%;
+                    padding-top: 0px;
+                    top: 20%;
+                    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+                }
+                .mainp{
+                    padding-left: 2.5%;
+                    padding-top: 0px;
+                    width: 55%;
+                    font-size: 15px;
+                    text-align: justify;
+                }
+                .mainpic{
+                    width:35%;
+                    right: 0%;
+                    top: 30%;
+                    z-index: -10;
+                }
+                button{
+                    margin-left: 8%;
+                }
+                .sm{
+                    width: 100%;
+                    height:5%;
+                    position: relative;
+                    top: 5%;
+                    background: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .f{
+                    position: unset;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+                .t{
+                    position: unset;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+                .i{
+                    position: unset;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+                button{
+                    width: 40%;
+                    margin-top: 10px;
+                }
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+    <div class="small_circle"></div>
+    <div class="large_circle"></div>
+    <div class="container">
+        <div class="navb">
+            <img class="logo" src="baa867c146c04d0b329fd6b0bf70281e.png">
+            <nav>
+                <a href="">Home</a>
+                <a href="">Contact</a>
+                <a href="">Phone</a>
+                <a href="">bookings</a>
+            </nav>
+        </div> 
+        <h1 class="main">It's not just coffee<br>It's <span style="color: #036635;"><b style="font-weight: bold;">Starbucks</b></span></h1>
+<p class="mainp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>    
+<img class="mainpic" src="images (2).jpg" >  
+<button>Explore</button>
+
+<div class="sm">
+<img class="f" src="519-5190929_facebook-icon-svg-grey-hd-png-download.png">
+<img class="t" src="download (1).png">
+<img class="i" src="download.png">
+</div>
+
+</div>
+    </div>
+</div>
+</body>
+</html>
